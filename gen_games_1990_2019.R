@@ -39,3 +39,6 @@ dt_2 <- dt_1[
 ]
 
 setnames(dt_2, c(names(dt_2)), c(names(dt_1), "spread_diff", "score_diff"))
+
+# Data write
+fwrite(dt_2, "games_1990_2019.csv")
